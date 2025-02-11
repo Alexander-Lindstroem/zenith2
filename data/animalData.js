@@ -1,4 +1,4 @@
-function Animal(name, lifespan, group, food, description, length, weight, habitat, iconFilename, image) {
+function Animal(name, lifespan, group, food, description, length, weight, habitat, iconFilename, imageFilename) {
     this.name = name;
     this.lifespan = lifespan;
     this.group = group;
@@ -8,7 +8,7 @@ function Animal(name, lifespan, group, food, description, length, weight, habita
     this.weight = weight;
     this.habitat = habitat;
     this.iconFilename = iconFilename;
-    this.image = image;
+    this.imageFilename = imageFilename;
 }
 
 let mammals = [
@@ -22,7 +22,7 @@ let mammals = [
         10,
         "Throughout Australia",
         "echidna.jpg",
-        "/assets/images/echidna.jpg"
+        "echidna.jpg"
     ),
     tasmanianDevil = new Animal(
         "Tasmanian Devil",
@@ -34,7 +34,7 @@ let mammals = [
         10,
         "Tasmania",
         "tasmanian-devil.jpg",
-        "/assets/images/tasmanian-devil.jpg"
+        "tasmanian-devil.jpg"
     ),
     quokka = new Animal(
         "Quokka",
@@ -46,7 +46,7 @@ let mammals = [
         3,
         "Only found on Rottnest Island and a few places on mainland Western Australia",
         "quokka.jpg",
-        "/assets/images/quokka.jpg"
+        "quokka.jpg"
     )
 ]
 let reptiles = [
@@ -60,7 +60,7 @@ let reptiles = [
         1,
         "Northern Australia",
         "frill-necked-lizard.png",
-        "/assets/images/frill-necked-lizard.png"
+        "frill-necked-lizard.png"
     ),
     hawksbillTurtle = new Animal(
         "Hawksbill Turtle",
@@ -84,7 +84,7 @@ let reptiles = [
         20,
         "Deserts",
         "perentie.png",
-        "/assets/images/perentie.png"
+        "perentie.png"
     )
 ]
 let birds = [
@@ -98,7 +98,7 @@ let birds = [
         44,
         "Queensland",
         "cassowary.jpg",
-        "/assets/images/cassowary.jpg"
+        "cassowary.jpg"
     ),
     kookaburra = new Animal(
         "Kookaburra",
@@ -110,7 +110,7 @@ let birds = [
         300 / 1000,
         "Australia wide",
         "kookaburra.jpeg",
-        "/assets/images/kookaburra.jpeg"
+        "kookaburra.jpeg"
     ),
     yellowTailedBlackCockatoo = new Animal(
         "Yellow-Tailed Black Cockatoo",
@@ -122,7 +122,7 @@ let birds = [
         900 / 1000,
         "SE Australia",
         "yellow-tailed-black-cockatoo.jpeg",
-        "/assets/images/yellow-tailed-black-cockatoo.jpeg"
+        "yellow-tailed-black-cockatoo.jpeg"
     )
 ]
 
