@@ -72,7 +72,7 @@ let reptiles = [
         50,
         "Tropical coasts of Queensland, Northern Territory and Western Australia.",
         "hawks-bill-turtle.png",
-        "/assets/images/hawks-bill-turtle.png"
+        "hawks-bill-turtle.png"
     ),
     perentie = new Animal(
         "Perentie",
