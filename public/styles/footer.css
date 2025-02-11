@@ -1,0 +1,41 @@
+.footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer__title {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.footer__members-groups {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-evenly;
+}
+
+.footer__members-group1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__members-group2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__member-dmitar {
+    margin-top: 0.5rem;
+    color: white;
+}
