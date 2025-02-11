@@ -22,4 +22,4 @@ app.use("/birds", birdRouter)
 app.use("/mammals", mammalRouter)
 app.use("/reptiles", reptileRouter)
 
-app.listen(PORT, () => console.log(`listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`✅ listening on port ${PORT} ➡️ http://localhost:${PORT}`))
