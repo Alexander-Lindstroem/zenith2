@@ -1,0 +1,79 @@
+
+html {
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.menu a {
+    color: rgba(51, 51, 51, 1);
+}
+
+/* Form */
+
+input:focus, input:active,
+button:focus, button:active, textarea:focus {
+    outline: none;
+}
