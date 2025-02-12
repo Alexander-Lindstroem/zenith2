@@ -21,7 +21,11 @@ let mammals = [
         "76cm",
         10,
         "Throughout Australia",
+<<<<<<< HEAD
         "echidna.jpg",
+=======
+        "echidna.png",
+>>>>>>> future/resetFileCss
         "echidna.jpg"
     ),
     new Animal(
@@ -33,7 +37,11 @@ let mammals = [
         "70cm",
         10,
         "Tasmania",
+<<<<<<< HEAD
         "tasmanian-devil.jpg",
+=======
+        "tasmanian-devil.png",
+>>>>>>> future/resetFileCss
         "tasmanian-devil.jpg"
     ),
     new Animal(
@@ -45,7 +53,11 @@ let mammals = [
         "50cm",
         3,
         "Only found on Rottnest Island and a few places on mainland Western Australia",
+<<<<<<< HEAD
         "quokka.jpg",
+=======
+        "quokka.png",
+>>>>>>> future/resetFileCss
         "quokka.jpg"
     )
 ]
@@ -97,7 +109,11 @@ let birds = [
         "1.7m",
         44,
         "Queensland",
+<<<<<<< HEAD
         "cassowary.jpg",
+=======
+        "cassowary.png",
+>>>>>>> future/resetFileCss
         "cassowary.jpg"
     ),
     new Animal(
@@ -109,7 +125,11 @@ let birds = [
         "43cm",
         300 / 1000,
         "Australia wide",
+<<<<<<< HEAD
         "kookaburra.jpeg",
+=======
+        "kookaburra.png",
+>>>>>>> future/resetFileCss
         "kookaburra.jpeg"
     ),
     new Animal(
@@ -121,7 +141,11 @@ let birds = [
         "65cm",
         900 / 1000,
         "SE Australia",
+<<<<<<< HEAD
         "yellow-tailed-black-cockatoo.jpeg",
+=======
+        "yellow-tailed-black-cockatoo.png",
+>>>>>>> future/resetFileCss
         "yellow-tailed-black-cockatoo.jpeg"
     )
 ]
