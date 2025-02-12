@@ -11,7 +11,7 @@ function Animal(name, lifespan, group, food, description, length, weight, habita
 }
 
 let mammals = [
-    echidna = new Animal(
+    new Animal(
         "Echidna",
         50,
         "Mammals",
@@ -22,7 +22,7 @@ let mammals = [
         "Throughout Australia",
         "echidna.png"
     ),
-    tasmanianDevil = new Animal(
+    new Animal(
         "Tasmanian Devil",
         5,
         "Mammals",
@@ -33,7 +33,7 @@ let mammals = [
         "Tasmania",
         "tasmanian-devil.png"
     ),
-    quokka = new Animal(
+    new Animal(
         "Quokka",
         10,
         "Mammals",
@@ -46,7 +46,7 @@ let mammals = [
     )
 ]
 let reptiles = [
-    frillNeckedLizard = new Animal(
+    new Animal(
         "Frill-Necked Lizard",
         20,
         "Reptiles",
@@ -57,7 +57,7 @@ let reptiles = [
         "Northern Australia",
         "frill-necked-lizard.png"
     ),
-    hawksbillTurtle = new Animal(
+    new Animal(
         "Hawksbill Turtle",
         50,
         "Reptiles",
@@ -68,7 +68,7 @@ let reptiles = [
         "Tropical coasts of Queensland, Northern Territory and Western Australia.",
         "hawksbill-turtle.png"
     ),
-    perentie = new Animal(
+    new Animal(
         "Perentie",
         20,
         "Reptiles",
@@ -81,7 +81,7 @@ let reptiles = [
     )
 ]
 let birds = [
-    cassowary = new Animal(
+    new Animal(
         "Cassowary",
         20,
         "Birds",
@@ -93,7 +93,7 @@ let birds = [
         "cassowary.png"
     ),
 
-    kookaburra = new Animal(
+    new Animal(
         "Kookaburra",
         20,
         "Birds",
@@ -105,7 +105,7 @@ let birds = [
         "kookaburra.png"
     ),
 
-    yellowTailedBlackCockatoo = new Animal(
+    new Animal(
         "Yellow-Tailed Black Cockatoo",
         41,
         "Birds",
@@ -118,6 +118,6 @@ let birds = [
     )
 ]
 
-allAnimals = {...birds, ...mammals, ...reptiles}
+let allAnimals = [...birds, ...mammals, ...reptiles]
 
 export {birds, mammals, reptiles, allAnimals}
