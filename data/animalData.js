@@ -12,7 +12,7 @@ function Animal(name, lifespan, group, food, description, length, weight, habita
 }
 
 let mammals = [
-    echidna = new Animal(
+    new Animal(
         "Echidna",
         50,
         "Mammals",
@@ -24,7 +24,7 @@ let mammals = [
         "echidna.jpg",
         "echidna.jpg"
     ),
-    tasmanianDevil = new Animal(
+    new Animal(
         "Tasmanian Devil",
         5,
         "Mammals",
@@ -36,7 +36,7 @@ let mammals = [
         "tasmanian-devil.jpg",
         "tasmanian-devil.jpg"
     ),
-    quokka = new Animal(
+    new Animal(
         "Quokka",
         10,
         "Mammals",
@@ -50,7 +50,7 @@ let mammals = [
     )
 ]
 let reptiles = [
-    frillNeckedLizard = new Animal(
+    new Animal(
         "Frill-Necked Lizard",
         20,
         "Reptiles",
@@ -62,7 +62,7 @@ let reptiles = [
         "frill-necked-lizard.png",
         "frill-necked-lizard.png"
     ),
-    hawksbillTurtle = new Animal(
+    new Animal(
         "Hawksbill Turtle",
         50,
         "Reptiles",
@@ -74,7 +74,7 @@ let reptiles = [
         "hawks-bill-turtle.png",
         "hawks-bill-turtle.png"
     ),
-    perentie = new Animal(
+    new Animal(
         "Perentie",
         20,
         "Reptiles",
@@ -88,7 +88,7 @@ let reptiles = [
     )
 ]
 let birds = [
-    cassowary = new Animal(
+    new Animal(
         "Cassowary",
         20,
         "Birds",
@@ -100,7 +100,7 @@ let birds = [
         "cassowary.jpg",
         "cassowary.jpg"
     ),
-    kookaburra = new Animal(
+    new Animal(
         "Kookaburra",
         20,
         "Birds",
@@ -112,7 +112,7 @@ let birds = [
         "kookaburra.jpeg",
         "kookaburra.jpeg"
     ),
-    yellowTailedBlackCockatoo = new Animal(
+    new Animal(
         "Yellow-Tailed Black Cockatoo",
         41,
         "Birds",
