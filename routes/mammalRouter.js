@@ -31,7 +31,8 @@ mammalRouter.get("/:mammalUrl", (req, res) => {
     });
   } else {
     res.status(404).render("pages/404", {
-      headTitle: "Animal Not Found",
+      pageType: "not-found",
+      headTitle: "Not-found",
       title: "Animal Not Found",
       subtitle: "The requested animal does not exist.",
       bodyClass: "not-found-body",
