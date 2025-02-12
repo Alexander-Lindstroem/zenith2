@@ -48,3 +48,9 @@
     margin-top: 2rem;
     color: white;
 }
+
+@media screen and (max-width: 650px) {
+    .footer-copyright {
+        width: 90%;
+    }
+}
