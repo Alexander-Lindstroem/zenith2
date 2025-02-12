@@ -1,4 +1,4 @@
-function Animal(name, lifespan, group, food, description, length, weight, habitat, iconFilename) {
+function Animal(name, lifespan, group, food, description, length, weight, habitat, iconFilename, imageFilename) {
     this.name = name;
     this.lifespan = lifespan;
     this.group = group;
@@ -8,6 +8,7 @@ function Animal(name, lifespan, group, food, description, length, weight, habita
     this.weight = weight;
     this.habitat = habitat;
     this.iconFilename = iconFilename;
+    this.imageFilename = imageFilename;
 }
 
 let mammals = [
@@ -20,7 +21,8 @@ let mammals = [
         "76cm",
         10,
         "Throughout Australia",
-        "echidna.png"
+        "echidna.jpg",
+        "echidna.jpg"
     ),
     new Animal(
         "Tasmanian Devil",
@@ -31,7 +33,8 @@ let mammals = [
         "70cm",
         10,
         "Tasmania",
-        "tasmanian-devil.png"
+        "tasmanian-devil.jpg",
+        "tasmanian-devil.jpg"
     ),
     new Animal(
         "Quokka",
@@ -42,7 +45,8 @@ let mammals = [
         "50cm",
         3,
         "Only found on Rottnest Island and a few places on mainland Western Australia",
-        "quokka.png"
+        "quokka.jpg",
+        "quokka.jpg"
     )
 ]
 let reptiles = [
@@ -55,6 +59,7 @@ let reptiles = [
         "90cm",
         1,
         "Northern Australia",
+        "frill-necked-lizard.png",
         "frill-necked-lizard.png"
     ),
     new Animal(
@@ -66,7 +71,8 @@ let reptiles = [
         "80cm (carapace)",
         50,
         "Tropical coasts of Queensland, Northern Territory and Western Australia.",
-        "hawksbill-turtle.png"
+        "hawks-bill-turtle.png",
+        "hawks-bill-turtle.png"
     ),
     new Animal(
         "Perentie",
@@ -77,6 +83,7 @@ let reptiles = [
         "2.5m",
         20,
         "Deserts",
+        "perentie.png",
         "perentie.png"
     )
 ]
@@ -90,9 +97,9 @@ let birds = [
         "1.7m",
         44,
         "Queensland",
-        "cassowary.png"
+        "cassowary.jpg",
+        "cassowary.jpg"
     ),
-
     new Animal(
         "Kookaburra",
         20,
@@ -102,9 +109,9 @@ let birds = [
         "43cm",
         300 / 1000,
         "Australia wide",
-        "kookaburra.png"
+        "kookaburra.jpeg",
+        "kookaburra.jpeg"
     ),
-
     new Animal(
         "Yellow-Tailed Black Cockatoo",
         41,
@@ -114,10 +121,11 @@ let birds = [
         "65cm",
         900 / 1000,
         "SE Australia",
-        "yellow-tailed-black-cockatoo.png"
+        "yellow-tailed-black-cockatoo.jpeg",
+        "yellow-tailed-black-cockatoo.jpeg"
     )
 ]
 
-let allAnimals = [...birds, ...mammals, ...reptiles]
+const allAnimals = [...birds, ...mammals, ...reptiles];
 
-export {birds, mammals, reptiles, allAnimals}
+export { allAnimals, birds, mammals, reptiles };
