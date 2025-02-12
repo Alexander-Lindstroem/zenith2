@@ -118,6 +118,6 @@ let birds = [
     )
 ]
 
-allAnimals = {...birds, ...mammals, ...reptiles}
+const allAnimals = {...birds, ...mammals, ...reptiles}
 
 export {birds, mammals, reptiles, allAnimals}

@@ -1,1 +1,58 @@
-
+<div class="sidebar">
+    <ul>
+        <li class="animal-button">
+            <img src="/icons/paw.png" alt="paw" class="icon-paw" id="btn">
+            <% if(locals.pageType && locals.mammals) { %>
+                <% if (pageType==="mammals" ) { %>
+                    <% locals.mammals.forEach(mammal=> { %>
+                
+                        <li>
+                            <a href="#" class="animal">
+                                <img src="<% mammal.iconFileName %>" class="icon-side">
+                                <span class="nav-item"><%mammal.name%></span>
+                            </a>
+                            <span class="tooltip"><% mammal.name %></span>
+                        </li>
+                
+                    <% });} %>
+                    <% else if (pageType==="reptiles" ) { %>
+                        <% locals.reptiles.forEach(reptile=> { %>
+                        
+                                <li>
+                                    <a href="#" class="animal">
+                                        <img src="<% reptile.iconFileName %>" class="icon-side">
+                                        <span class="nav-item"><% reptile.name %></span>
+                                    </a>
+                                    <span class="tooltip"><% reptile.name %></span>
+                                </li>
+                        
+                            <% });} %>
+                    <% else if (pageType==="birds" ) { %>
+                        <%locals.birds.forEach(bird => {%>
+                    
+                                <li>
+                                    <a href="#" class="animal">
+                                        <img src="<%bird.iconFileName%>" class="icon-side">
+                                        <span class="nav-item"><%bird.name%></span>
+                                    </a>
+                                    <span class="tooltip"><%bird.name%></span>
+                                </li>
+                        
+                    <% });} %>
+                    <% else if (pageType==="home" ) { %>
+                        <%locals.allAnimals.forEach(animal => {%>
+                    
+                                <li>
+                                    <a href="#" class="animal">
+                                        <img src="<% animal.iconFileName %>" class="icon-side">
+                                        <span class="nav-item"><% animal.name %></span>
+                                    </a>
+                                    <span class="tooltip"><% animal.name %></span>
+                                </li>
+                        
+                    <% });} %>
+                <% } %>
+        </li>
+    </ul>
+    <div class="border-line-vertical"></div>
+</div>
