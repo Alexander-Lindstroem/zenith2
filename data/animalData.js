@@ -21,7 +21,7 @@ let mammals = [
         "76cm",
         10,
         "Throughout Australia",
-        "echidna.jpg",
+        "echidna.png",
         "echidna.jpg"
     ),
     new Animal(
@@ -33,7 +33,7 @@ let mammals = [
         "70cm",
         10,
         "Tasmania",
-        "tasmanian-devil.jpg",
+        "tasmanian-devil.png",
         "tasmanian-devil.jpg"
     ),
     new Animal(
@@ -45,7 +45,7 @@ let mammals = [
         "50cm",
         3,
         "Only found on Rottnest Island and a few places on mainland Western Australia",
-        "quokka.jpg",
+        "quokka.png",
         "quokka.jpg"
     )
 ]
@@ -97,7 +97,7 @@ let birds = [
         "1.7m",
         44,
         "Queensland",
-        "cassowary.jpg",
+        "cassowary.png",
         "cassowary.jpg"
     ),
     new Animal(
@@ -109,7 +109,7 @@ let birds = [
         "43cm",
         300 / 1000,
         "Australia wide",
-        "kookaburra.jpeg",
+        "kookaburra.png",
         "kookaburra.jpeg"
     ),
     new Animal(
@@ -121,7 +121,7 @@ let birds = [
         "65cm",
         900 / 1000,
         "SE Australia",
-        "yellow-tailed-black-cockatoo.jpeg",
+        "yellow-tailed-black-cockatoo.png",
         "yellow-tailed-black-cockatoo.jpeg"
     )
 ]
