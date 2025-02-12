@@ -27,6 +27,7 @@ mammalRouter.get("/:mammalUrl", (req, res) => {
       subtitle: animal.description,
       image: `/assets/images/${animal.imageFilename}`,
       bodyClass: "mammals-body",
+      mammal: animal.name,
     });
   } else {
     res.status(404).render("pages/404", {
