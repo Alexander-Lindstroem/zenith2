@@ -15,7 +15,7 @@ reptileRouter.get("/frillneckedlizard", (req, res) => {
     let frillneckedlizard = reptiles[0]
     res.render("pages/animal", {
         headTitle: frillneckedlizard.name,
-        headerTitle: "Reptiles",
+        infoImage: frillneckedlizard.imageFilename,
         infoLifespan: frillneckedlizard.lifespan,
         infoGroup: frillneckedlizard.group,
         infoFood: frillneckedlizard.food,
@@ -31,7 +31,7 @@ reptileRouter.get("/hawksbillturtle", (req, res) => {
     let hawksbillturtle = reptiles[1]
     res.render("pages/animal", {
         headTitle: hawksbillturtle.name,
-        headerTitle: "Reptiles",
+        infoImage: hawksbillturtle.imageFilename,
         infoLifespan: hawksbillturtle.lifespan,
         infoGroup: hawksbillturtle.group,
         infoFood: hawksbillturtle.food,
@@ -48,7 +48,7 @@ reptileRouter.get("/perentie", (req, res) => {
     let perentie = reptiles[2]
     res.render("pages/animal", {
         headTitle: perentie.name,
-        headerTitle: "Reptiles",
+        infoImage: perentie.imageFilename,
         infoLifespan: perentie.lifespan,
         infoGroup: perentie.group,
         infoFood: perentie.food,
@@ -56,8 +56,7 @@ reptileRouter.get("/perentie", (req, res) => {
         infoLength: perentie.length,
         infoWeight: perentie.weight,
         infoHabitat: perentie.habitat,
-        reptile: perentie
-
+        reptile: perentie 
     })
 })
 

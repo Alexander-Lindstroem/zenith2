@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.animal__info--container {
+    display: flex;
+    justify-content: center;
+}
+
+.animal__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.animal__info h4 {
+    margin: 8px 24px;
+}
+
+.animal__info img {
+    margin: 16px;
+    width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .animal__info {
+        width: 100%;
+    }
+
+    .animal__info img {
+        width: 250px;
+    }
+}
