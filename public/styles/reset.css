@@ -1,4 +1,3 @@
-
 html {
     width: 100%;
 }
@@ -9,15 +8,7 @@ html {
 }
 
 body {
-    width: 100%;
     min-height: 100%;
-}
-
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
 }
 
 /* Links */
@@ -31,11 +22,6 @@ a:hover  {
 }
 
 /* Common */
-
-aside, nav, footer, header, section, main {
-	display: block;
-}
-
 
 h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
@@ -65,10 +51,6 @@ button, input[type="submit"] {
 
 address {
   font-style: normal;
-}
-
-.menu a {
-    color: rgba(51, 51, 51, 1);
 }
 
 /* Form */
