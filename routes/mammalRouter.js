@@ -3,7 +3,7 @@ import { mammals } from '../data/animalData.js';
 const mammalRouter = express.Router();
 
 mammalRouter.get("/", (req, res) => {
-  res.render("pages/welcome", {
+  res.render("pages/animal", {
     pageType: "mammals",
     headTitle: "Mammals",
     title: "Mammals",
@@ -29,15 +29,7 @@ mammalRouter.get("/:mammalUrl", (req, res) => {
       bodyClass: "mammals-body",
       mammal: animal.name,
     });
-  } else {
-    res.status(404).render("pages/404", {
-      pageType: "not-found",
-      headTitle: "Not-found",
-      title: "Animal Not Found",
-      subtitle: "The requested animal does not exist.",
-      bodyClass: "not-found-body",
-    });
-  }
+  } 
 });
 
 export default mammalRouter;
