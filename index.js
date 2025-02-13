@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
         headTitle: "Zoo",
         group: "home",
         animalArray: allAnimals
+        headerTitle: "Zenith 2.0"
     })
 })
 
