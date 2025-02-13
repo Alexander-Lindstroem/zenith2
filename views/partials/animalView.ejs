@@ -1,1 +1,39 @@
+<%if (locals.group === "home") {%>
+    <div class="parent-container">
 
+        <div class="container">
+            <div class="information-container">
+                <p>
+                    ${selectedAnimal.description.substring(0, 200)}
+                </p>
+            </div>
+
+            <div class="name-container">
+                <img src="./homepage-images/${selectedAnimal.name.toLowerCase()}-preview.png" alt="">
+                <h2>${selectedAnimal.name}</h2>
+            </div>
+
+            <div class="border-line-horizontal"></div>
+        </div>
+
+        <div class="container">
+            <div class="food-container">
+                <h2>Favorite food:</h2>
+                <p>${selectedAnimal.food}</p>
+            </div>
+
+            <div class="group-container">
+                <h2>${selectedAnimal.group} Group</h2>
+                <a href="./html/${selectedAnimal.group.toLowerCase()}.html">
+                    <button>Learn more</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="border-line-vertical"></div>
+        <div class="border-line-vertical-reverse"></div>
+
+        <div class="border-line-horizontal"></div>
+        <div class="border-line-horizontal-reverse"></div>
+    </div>
+<% } %>
