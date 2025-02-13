@@ -71,7 +71,7 @@ let reptiles = [
         "80cm (carapace)",
         50,
         "Tropical coasts of Queensland, Northern Territory and Western Australia.",
-        "hawks-bill-turtle.png",
+        "hawksbill-turtle.png",
         "hawks-bill-turtle.png"
     ),
     new Animal(
@@ -126,6 +126,6 @@ let birds = [
     )
 ]
 
-const allAnimals = [...birds, ...mammals, ...reptiles];
+const allAnimals = [...mammals, ...reptiles, ...birds];
 
 export { allAnimals, birds, mammals, reptiles };
