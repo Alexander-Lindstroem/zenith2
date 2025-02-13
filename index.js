@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     res.render("pages/index", {
         headTitle: "Zoo",
         group: "home",
-        animalArray: allAnimals
+        animalArray: allAnimals,
         headerTitle: "Zenith 2.0"
     })
 })
