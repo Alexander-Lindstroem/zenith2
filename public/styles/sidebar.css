@@ -1,12 +1,18 @@
 .sidebar {
     position: fixed;
     top: 0;
+    left: -60px;
     height: 100%;
     width: 80px;
     background-color: var(--background-optional-color);
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
     z-index: 20;
+    transition: 0.5s;
+}
+
+.sidebar:hover {
+    left:0
 }
 
 .sidebar ul {
@@ -41,7 +47,6 @@
     font-size: 1.2rem;
     line-height: 50px;
     transform: translateX(-50%);
-    cursor: pointer;
 }
 
 .sidebar.active #btn {
@@ -149,6 +154,7 @@
         height: 38px;
     }
     .sidebar {
+        left: -40px;
         width: 60px;
         padding: 0.4rem 0.6rem;
     }
