@@ -1,1 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Herr+Von+Muellerhoff&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Herr+Von+Muellerhoff&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=My+Soul&family=Noto+Serif+Thai:wght@100..900&display=swap');
+
+/* You can introduce different colors if needed */
+:root {
+    --background-main-color: #fffff2;
+    --background-secondary-color: rgb(0, 37, 38);
+    --background-optional-color: rgb(49, 33, 39);
+    --body-background-color: rgb(95, 58, 73);
+    --button-color: rgb(0, 135, 103);
+    --button-optional-color: rgb(209, 195, 136);
+    --button-secondary-color: rgb(216, 216, 216);
+    --text-main-color: rgb(0, 0, 0); 
+    --text-secondary-color: rgb(255, 255, 255);   
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bitter", serif;
+    background-color: var(--body-background-color);
+    height: 100%;
+}
+
+html {
+    min-height: 100%;
+}
+
+.border-line-horizontal {
+    position: absolute;
+    height: 2px;
+    background-color: var(--background-main-color);
+    right: 0;
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    animation: horizontal-lineup 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.border-line-vertical {
+    position: absolute;
+    width: 2px;
+    background-color: var(--background-main-color);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scaleY(0);
+    animation: vertical-lineup 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.border-line-horizontal-reverse {
+    position: absolute;
+    height: 2px;
+    background-color: var(--background-main-color);
+    right: 0;
+    left: 0;
+    top: -2px;
+    transform: scaleX(0);
+    animation: horizontal-lineup 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+.border-line-vertical-reverse {
+    position: absolute;
+    width: 2px;
+    background-color: var(--background-main-color);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: scaleY(0);
+    animation: vertical-lineup 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes horizontal-lineup {
+    0%{
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: bottom right;
+    }
+}
+
+@keyframes vertical-lineup {
+    0%{
+        transform: scaleY(0);
+        transform-origin: right bottom;
+    }
+    100%{
+        transform: scaleY(1);
+        transform-origin: right bottom;
+    }
+}
+
+@keyframes horizontal-lineup-center {
+    0%{
+        transform: scaleX(0);
+        transform-origin: center bottom;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: center bottom;
+    }
+}
+
+@keyframes vertical-lineup-center {
+    0%{
+        transform: scaleY(0);
+        transform-origin: right center;
+    }
+    100%{
+        transform: scaleY(1);
+        transform-origin: right center;
+    }
+}
