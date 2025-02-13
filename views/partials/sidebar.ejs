@@ -1,1 +1,17 @@
-
+<div class="sidebar">
+    <ul>
+        <li class="animal-button">
+            <img src="/assets/icons/paw.png" alt="paw" class="icon-paw" id="btn">
+                <%locals.animalArray.forEach(animal=> { %>
+                    <li>
+                        <a href="#" class="animal">
+                            <img src="/assets/icons/<%=animal.iconFilename%>" class="icon-side">
+                            <span class="nav-item"><%=animal.name%></span>
+                        </a>
+                        <span class="tooltip"><%= animal.name %></span>
+                    </li>            
+                <% });%>
+        </li>
+    </ul>
+    <div class="border-line-vertical"></div>
+</div>
