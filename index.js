@@ -1,6 +1,6 @@
 import express from "express";
 import birdRouter from "./routes/birdRouter.js";
-import mammalRouter from "./routes/birdRouter.js";
+import mammalRouter from "./routes/mammalRouter.js";
 import reptileRouter from "./routes/reptileRouter.js"
 import {allAnimals} from "./data/animalData.js"
 import * as path from "path";
