@@ -4,10 +4,9 @@ const mammalRouter = express.Router();
 
 mammalRouter.get("/", (req, res) => {
   res.render("pages/animal", {
-    pageType: "mammals",
     headTitle: "Mammals",
-    title: "Mammals",
-    subtitle: "Our mammals",
+    headerTitle: "Mammals",
+    welcomeMsg: "Australia is home to unique mammals, including marsupials like kangaroos, koalas, and wombats. These animals carry their young in pouches. The platypus and echidna, rare monotremes, lay eggs. Many species, such as the quokka and numbat, are found nowhere else, thriving in Australia's diverse landscapes, from forests to deserts.",
     bodyClass: "mammals-body",
   });
 });
@@ -21,12 +20,15 @@ mammalRouter.get("/:mammalUrl", (req, res) => {
 
   if (animal) {
     res.render("pages/animal", {
-      pageType: "mammals",
-      headTitle: "Mammals",
-      title: animal.name,
-      subtitle: animal.description,
-      image: `/assets/images/${animal.imageFilename}`,
-      bodyClass: "mammals-body",
+      headTitle: animal.name,
+      infoImage: animal.imageFilename,
+      infoLifespan: animal.lifespan,
+      infoGroup: animal.group,
+      infoFood: animal.food,
+      infoDesc: animal.description,
+      infoLength: animal.length,
+      infoWeight: animal.weight,
+      infoHabitat: animal.habitat,
       mammal: animal.name,
     });
   } 
