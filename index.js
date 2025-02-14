@@ -19,11 +19,23 @@ app.use(express.static(path.join(__dirname, "public")))
 app.get("/", (req, res) => {
     res.render("pages/index", {
         headTitle: "Zoo",
-        group: "home",
+        pageType: "home",
         animalArray: allAnimals,
         headerTitle: "Zenith 2.0"
     })
 })
+
+app.get("/home/:animal", (req, res) => {
+    const selectedAnimal = allAnimals.find(animal => animal.name === req.params.animal);
+    res.render("pages/index", {
+        headTitle: "Zoo",
+        pageType: "animalHome",
+        animalArray: allAnimals,
+        selectedAnimal: selectedAnimal,
+        headerTitle: "Zenith 2.0"
+    })
+})
+
 
 app.use("/birds", birdRouter)
 app.use("/mammals", mammalRouter)
