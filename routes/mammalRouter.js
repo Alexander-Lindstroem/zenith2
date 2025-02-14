@@ -33,7 +33,9 @@ mammalRouter.get("/:mammalUrl", (req, res) => {
       infoLength: animal.length,
       infoWeight: animal.weight,
       infoHabitat: animal.habitat,
-      mammal: animal.name
+      mammal: animal.name,
+      animalArray: mammals,
+      pageType: "mammals"
     });
   } 
 });

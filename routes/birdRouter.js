@@ -28,6 +28,8 @@ birdRouter.get("/cassowary", (req, res) => {
         infoLength: cassowary.length,
         infoWeight: cassowary.weight,
         infoHabitat: cassowary.habitat,
+        animalArray: birds,
+        pageType: "birds"
     })
 })
 
@@ -45,6 +47,8 @@ birdRouter.get("/kookaburra", (req, res) => {
         infoLength: kookaburra.length,
         infoWeight: kookaburra.weight,
         infoHabitat: kookaburra.habitat,
+        animalArray: birds,
+        pageType: "birds"
     })
 })
 
@@ -62,6 +66,8 @@ birdRouter.get("/Yellow-Tailed%20Black%20Cockatoo", (req, res) => {
         infoLength: yellowtailedblackcockatoo.length,
         infoWeight: yellowtailedblackcockatoo.weight,
         infoHabitat: yellowtailedblackcockatoo.habitat,
+        animalArray: birds,
+        pageType: "birds"
     })
 })
 

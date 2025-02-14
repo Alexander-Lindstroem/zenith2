@@ -27,7 +27,9 @@ reptileRouter.get("/Frill-Necked%20Lizard", (req, res) => {
         infoLength: frillneckedlizard.length,
         infoWeight: frillneckedlizard.weight,
         infoHabitat: frillneckedlizard.habitat,
-        reptile: frillneckedlizard
+        reptile: frillneckedlizard,
+        animalArray: reptiles,
+        pageType: "reptiles"
     })
 })
 
@@ -44,7 +46,9 @@ reptileRouter.get("/Hawksbill%20Turtle", (req, res) => {
         infoLength: hawksbillturtle.length,
         infoWeight: hawksbillturtle.weight,
         infoHabitat: hawksbillturtle.habitat,
-        reptile: hawksbillturtle
+        reptile: hawksbillturtle,
+        animalArray: reptiles,
+        pageType: "reptiles"
     })
 })
 
@@ -61,7 +65,9 @@ reptileRouter.get("/perentie", (req, res) => {
         infoLength: perentie.length,
         infoWeight: perentie.weight,
         infoHabitat: perentie.habitat,
-        reptile: perentie
+        reptile: perentie,
+        animalArray: reptiles,
+        pageType: "reptiles"
     })
 })
 
