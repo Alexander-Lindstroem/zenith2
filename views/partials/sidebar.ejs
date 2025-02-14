@@ -4,7 +4,11 @@
             <img src="/assets/icons/paw.png" alt="paw" class="icon-paw" id="btn">
                 <%locals.animalArray.forEach(animal=> { %>
                     <li>
-                        <a href="#" class="animal">
+                        <%if(pageType === "home"|| pageType === "animalHome") {%>
+                        <a href="/home/<%=animal.name%>" class="animal">
+                        <%} else {%>
+                            <a href="/<%animal.group%>/<%=animal.name%>" class="animal"></a>
+                            <% } %>
                             <img src="/assets/icons/<%=animal.iconFilename%>" class="icon-side">
                             <span class="nav-item"><%=animal.name%></span>
                         </a>
