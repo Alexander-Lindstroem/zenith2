@@ -1,7 +1,8 @@
 import express from "express";
 import birdRouter from "./routes/birdRouter.js";
-import mammalRouter from "./routes/birdRouter.js";
+import mammalRouter from "./routes/mammalRouter.js";
 import reptileRouter from "./routes/reptileRouter.js"
+import {allAnimals} from "./data/animalData.js"
 import * as path from "path";
 import * as dotenv from "dotenv";
 
@@ -17,9 +18,24 @@ app.use(express.static(path.join(__dirname, "public")))
 
 app.get("/", (req, res) => {
     res.render("pages/index", {
-        headTitle: "Zoo"
+        headTitle: "Zoo",
+        pageType: "home",
+        animalArray: allAnimals,
+        headerTitle: "Zenith 2.0"
     })
 })
+
+app.get("/home/:animal", (req, res) => {
+    const selectedAnimal = allAnimals.find(animal => animal.name === req.params.animal);
+    res.render("pages/index", {
+        headTitle: "Zoo",
+        pageType: "animalHome",
+        animalArray: allAnimals,
+        selectedAnimal: selectedAnimal,
+        headerTitle: "Zenith 2.0"
+    })
+})
+
 
 app.use("/birds", birdRouter)
 app.use("/mammals", mammalRouter)
