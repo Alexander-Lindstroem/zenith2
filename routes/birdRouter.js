@@ -24,7 +24,7 @@ birdRouter.get("/cassowary", (req, res) => {
         infoLifespan: cassowary.lifespan,
         infoGroup: cassowary.group,
         infoFood: cassowary.food,
-        infoDescription: cassowary.description,
+        infoDesc: cassowary.description,
         infoLength: cassowary.length,
         infoWeight: cassowary.weight,
         infoHabitat: cassowary.habitat,
@@ -34,9 +34,9 @@ birdRouter.get("/cassowary", (req, res) => {
 })
 
 birdRouter.get("/kookaburra", (req, res) => {
-    let cassowary = birds[1];
+    let kookaburra = birds[1];
     res.render("pages/animal", {
-        headTitle: cassowary.name,
+        headTitle: kookaburra.name,
         headerTitle: "Birds",
         infoImage: kookaburra.imageFilename,
         birds: kookaburra.name,
@@ -53,9 +53,9 @@ birdRouter.get("/kookaburra", (req, res) => {
 })
 
 birdRouter.get("/Yellow-Tailed%20Black%20Cockatoo", (req, res) => {
-    let cassowary = birds[2];
+    let yellowtailedblackcockatoo = birds[2];
     res.render("pages/animal", {
-        headTitle: cassowary.name,
+        headTitle: yellowtailedblackcockatoo.name,
         headerTitle: "Birds",
         infoImage: yellowtailedblackcockatoo.imageFilename,
         birds: yellowtailedblackcockatoo.name,
