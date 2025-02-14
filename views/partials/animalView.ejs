@@ -20,3 +20,36 @@
         <p><%= welcomeMsg %></p>
     </div>
 <% } %>
+
+<%if (locals.pageType === "animalHome" && locals.selectedAnimal) {%>
+    <div class="parent-container">
+        <div class="container">
+            <div class="information-container">
+                <p>
+                    <%=selectedAnimal.description.substring(0, 200)%>
+                </p>
+            </div>
+
+            <div class="name-container">
+                <img src="/assets/images/<%=selectedAnimal.imageFilename%>" alt="">
+                <h2><%=selectedAnimal.name%></h2>
+            </div>
+            <div class="border-line-horizontal"></div>
+
+        </div>
+
+        <div class="container">
+            <div class="food-container">
+                <h2>Favorite food:</h2>
+                <p><%=selectedAnimal.food%></p>
+            </div>
+
+            <div class="group-container">
+                <h2><%selectedAnimal.group%> Group</h2>
+                <a href="/<%=selectedAnimal.group.toLowerCase()%>">
+                    <button>Learn more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+<% } %>
