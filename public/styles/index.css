@@ -1,0 +1,133 @@
+.main-content {
+    position: relative;
+    margin-left: 20px;
+    gap: 5rem;
+    flex-grow: 1;
+    opacity: 1;
+    transition: 0.5s ease;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-content.fadeOut {
+    opacity: 0;
+}
+
+.main-content.active {
+    margin-left: 250px;
+}
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+/* Welcome */
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(95, 58, 73);
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+.welcome-container, .choose-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.welcome-container h2 {
+    color: var(--background-main-color);
+    font-size: 3rem;
+}
+
+.welcome-container p {
+    color: var(--background-main-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.welcome-container button {
+    padding: 0.5rem 9rem;
+    border: 2px solid var(--background-main-color);
+    color: var(--background-main-color);
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(255, 255, 242, 0.497);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.welcome-container button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 242, 1);
+}
+
+@media (max-width: 748px){
+    .container:first-child{
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 605px) {
+    .main-content {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 553px) {
+    .welcome-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-container p {
+        font-size: 1rem;
+    }
+
+    .welcome-container button {
+        padding: 0.5rem 4rem;
+    }
+
+    .container {
+        padding: 1rem;
+        padding-bottom: 1.3rem;
+    }
+    .group-container h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 431px) {
+    .name-container h2 {
+        font-size: 1rem;
+    }
+}
