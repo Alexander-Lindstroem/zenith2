@@ -21,6 +21,7 @@ mammalRouter.get("/:mammalUrl", (req, res) => {
   if (animal) {
     res.render("pages/animal", {
       headTitle: animal.name,
+      headerTitle: "Mammals",
       infoImage: animal.imageFilename,
       infoLifespan: animal.lifespan,
       infoGroup: animal.group,

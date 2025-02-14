@@ -1,13 +1,22 @@
-.animal__info--container {
+.animal__info--container,
+.welcome__msg--container {
     display: flex;
     justify-content: center;
+    margin-top: 24px;
 }
 
 .animal__info {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
     text-align: center;
     width: 50%;
+}
+
+.animal__info h2,
+.welcome__msg--container h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 .animal__info h4 {
@@ -16,7 +25,16 @@
 
 .animal__info img {
     margin: 16px;
-    width: 500px;
+    width: 350px;
+}
+
+.welcome__msg--container {
+    flex-direction: column;
+}
+
+.welcome__msg--container p {
+    margin: 24px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
