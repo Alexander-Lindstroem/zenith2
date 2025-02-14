@@ -14,14 +14,7 @@
             <h4>Habitat: <%= infoHabitat %></h4>
         </div>
     </div>
-<% } else { %>
-    <div class="welcome__msg--container">
-        <h2><%= welcomeMsgTitle %></h2>
-        <p><%= welcomeMsg %></p>
-    </div>
-<% } %>
-
-<%if (locals.pageType === "animalHome" && locals.selectedAnimal) {%>
+<%} else if (locals.pageType === "animalHome" && locals.selectedAnimal) {%>
     <div class="parent-container">
         <div class="container">
             <div class="information-container">
@@ -53,8 +46,8 @@
         </div>
     </div>
 <% } else if (locals.pageType !== "home"){ %>
-    <div class="welcome__msg--container">
-        <h2>Welcome to the <%= headTitle %> page!</h2>
-        <p><%= welcomeMsg %></p>
-    </div>
+        <div class="welcome__msg--container">
+            <h2><%= welcomeMsgTitle %></h2>
+            <p><%= welcomeMsg %></p>
+        </div>
 <% } %>
