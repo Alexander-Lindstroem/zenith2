@@ -7,6 +7,7 @@ birdRouter.get("/", (req, res) => {
     res.render("pages/animal", {
         headTitle: "Birds",
         headerTitle: "Birds",
+        welcomeMsgTitle: `Welcome to the birds page!`,
         welcomeMsg: "We are excited to invite you to explore our wonderful collection of birds, featuring the striking Cassowary, the cheerful Kookaburra, and the majestic Yellow-Tailed Black Cockatoo. Immerse yourself in the fascinating world of these incredible feathered creatures and learn about their unique traits, natural habitats, and behaviors. Enjoy your visit, and feel free to reach out if you have any questions or would like more information about our avian friends!"
     }) 
 })
@@ -24,7 +25,7 @@ birdRouter.get("/cassowary", (req, res) => {
         infoDesc: cassowary.description,
         infoLength: cassowary.length,
         infoWeight: cassowary.weight,
-        infoHabitat: cassowary.habitat
+        infoHabitat: cassowary.habitat,
     })
 })
 
@@ -41,7 +42,7 @@ birdRouter.get("/kookaburra", (req, res) => {
         infoDesc: kookaburra.description,
         infoLength: kookaburra.length,
         infoWeight: kookaburra.weight,
-        infoHabitat: kookaburra.habitat
+        infoHabitat: kookaburra.habitat,
     })
 })
 
@@ -58,7 +59,7 @@ birdRouter.get("/yellow-tailed-black-cockatoo", (req, res) => {
         infoDesc: yellowtailedblackcockatoo.description,
         infoLength: yellowtailedblackcockatoo.length,
         infoWeight: yellowtailedblackcockatoo.weight,
-        infoHabitat: yellowtailedblackcockatoo.habitat
+        infoHabitat: yellowtailedblackcockatoo.habitat,
     })
 })
 
