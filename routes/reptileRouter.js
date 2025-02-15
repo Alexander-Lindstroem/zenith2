@@ -7,6 +7,7 @@ reptileRouter.get("/", (req, res) => {
     res.render("pages/animal", {
         headTitle: "Reptiles",
         headerTitle: "Reptiles",
+        welcomeMsgTitle: `Welcome to the reptiles page!`,
         welcomeMsg: "We are thrilled to have you explore our amazing collection of reptiles, including the fascinating Frill-Necked Lizard, the graceful Hawksbill Turtle, and the majestic Perentie. Dive into the world of these incredible creatures and discover their unique traits, habitats, and behaviors. Enjoy your visit, and don't hesitate to reach out if you have any questions or need more information about our reptilian friends!",
         animalArray: reptiles,
         pageType: "reptiles"
