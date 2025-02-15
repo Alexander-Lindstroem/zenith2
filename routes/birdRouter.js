@@ -8,7 +8,7 @@ birdRouter.get("/", (req, res) => {
         headTitle: "Birds",
         headerTitle: "Birds",
         welcomeMsgTitle: `Welcome to the birds page!`,
-        welcomeMsg: "We are excited to invite you to explore our wonderful collection of birds, featuring the striking Cassowary, the cheerful Kookaburra, and the majestic Yellow-Tailed Black Cockatoo. Immerse yourself in the fascinating world of these incredible feathered creatures and learn about their unique traits, natural habitats, and behaviors. Enjoy your visit, and feel free to reach out if you have any questions or would like more information about our avian friends!"
+        welcomeMsg: "We are excited to invite you to explore our wonderful collection of birds, featuring the striking Cassowary, the cheerful Kookaburra, and the majestic Yellow-Tailed Black Cockatoo. Immerse yourself in the fascinating world of these incredible feathered creatures and learn about their unique traits, natural habitats, and behaviors. Enjoy your visit, and feel free to reach out if you have any questions or would like more information about our avian friends!",
         animalArray: birds,
         pageType: "birds"
     }) 
@@ -24,12 +24,12 @@ birdRouter.get("/cassowary", (req, res) => {
         infoLifespan: cassowary.lifespan,
         infoGroup: cassowary.group,
         infoFood: cassowary.food,
-        infoDescription: cassowary.description,
+        infoDesc: cassowary.description,
         infoLength: cassowary.length,
         infoWeight: cassowary.weight,
         infoHabitat: cassowary.habitat,
         animalArray: birds,
-        pageType: "animal"
+        pageType: "birds"
     })
 })
 
@@ -48,7 +48,7 @@ birdRouter.get("/kookaburra", (req, res) => {
         infoWeight: kookaburra.weight,
         infoHabitat: kookaburra.habitat,
         animalArray: birds,
-        pageType: "animal"
+        pageType: "birds"
     })
 })
 
@@ -67,7 +67,7 @@ birdRouter.get("/Yellow-Tailed%20Black%20Cockatoo", (req, res) => {
         infoWeight: yellowtailedblackcockatoo.weight,
         infoHabitat: yellowtailedblackcockatoo.habitat,
         animalArray: birds,
-        pageType: "animal"
+        pageType: "birds"
     })
 })
 
