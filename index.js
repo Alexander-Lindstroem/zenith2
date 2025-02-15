@@ -21,7 +21,9 @@ app.get("/", (req, res) => {
         headTitle: "Zoo",
         pageType: "home",
         animalArray: allAnimals,
-        headerTitle: "Zenith 2.0"
+        headerTitle: "Zenith 2.0",
+        welcomeMsgTitle: "",
+        welcomeMsg: ""
     })
 })
 
@@ -32,7 +34,9 @@ app.get("/home/:animal", (req, res) => {
         pageType: "animalHome",
         animalArray: allAnimals,
         selectedAnimal: selectedAnimal,
-        headerTitle: "Zenith 2.0"
+        headerTitle: "Zenith 2.0",
+        welcomeMsgTitle: "",
+        welcomeMsg: ""
     })
 })
 
